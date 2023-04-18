@@ -3,7 +3,7 @@
 
 Po pierwsze, należy wyróżnić dwa kluczowe pojęcia w kontekście projektu MLOps, czyli:
 - **Tworzenie (tracking)** - w ramach tworzenia rozumiemy cały proces tworzenia modeli uczenia maszynowego, od ich budowy, poprzez trenowanie, aż do ewaluacji. 
-  Wspomagamy proces tworzenia poprzez możliwość zapisywania na naszej stronie najwazniejszych informacji o modelu, takich jak:
+  Wspomagamy proces tworzenia poprzez możliwość zapisywania na naszej stronie najważniejszych informacji o modelu, takich jak:
   nazwa modelu, zbiór danych, parametry, wyniki na zbiorze testowym itp.
 - **Monitorowanie (monitoring)** - w ramach monitorowania rozumiemy proces wdrażania modeli, czyli proces, w którym model jest wdrożony w środowisku produkcyjnym. 
   Wspomagamy proces monitorowania poprzez możliwość zapisywania predykcji oraz danych wejściowych modelu produkcyjnego, a także możliwość
@@ -25,7 +25,8 @@ Jako przykład eksperymentu możemy wyróżnić np. `Metody skalowania danych`, 
 - **Dataset** - dataset to zbiór danych, który jest wykorzystywany w ramach konkretnej iteracji.
   Nie będziemy przechowywać datasetów samych w sobie, a raczej odnośniki do nich, np. w postaci adresu URL lub ścieżki lokalnej.
 - **Alerty** - w ramach alertów przy procesie tworzenia użytkownik będzie mógł skonfigurować,
-  aby po udanym dodaniu iteracji na stronę otrzymywał on maila z informacją zwrtoną zawierającą wyniki iteracji.
+  aby po udanym dodaniu iteracji na stronę otrzymywał on maila z informacją zwrotną zawierającą wyniki iteracji.
+- **Wykresy** - interaktywne wykresy wizualizujące np. krzywą uczenia lub wyniki metryk na zbiorze testowym.
 
 ## Monitorowanie
 Najważniejsze pojęcia związane z monitorowaniem modeli:
@@ -33,3 +34,4 @@ Najważniejsze pojęcia związane z monitorowaniem modeli:
   za pomocą kliknięcia w zakładce **Tworzenia** lub dodany ręcznie uploadując plik o rozszerzeniu .pkl.
 - **Alerty** - w ramacha alertów dla monitorowania chcemy wyróżnić np. alerty dotyczące informowania o niepowodzeniu predykcji lub
 alerty związane z wartością predykcji, np. gdy predykcja jest większa niż ustalona wartość.
+- **Wykresy** - tworzenie wykresów w oparciu o dane produkcyjne oraz predykcje, np. w celu poszukiwania potencjalnego data shiftu.
