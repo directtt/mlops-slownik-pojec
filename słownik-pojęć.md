@@ -1,5 +1,5 @@
 # Słownik pojęć dla projektu MLOps
-*stan na: 18.04.2023*
+*stan na: 27.04.2023*
 
 Po pierwsze, należy wyróżnić dwa kluczowe pojęcia w kontekście projektu MLOps, czyli:
 - **Tworzenie (tracking)** - w ramach tworzenia rozumiemy cały proces tworzenia modeli uczenia maszynowego, od ich budowy, poprzez trenowanie, aż do ewaluacji. 
@@ -18,6 +18,9 @@ Najważniejsze pojęcia związane z tworzeniem modeli:
   oraz modeli uruchamianych w ramach iteracji.
 - **Eskperyment** - eksperyment to pojedynczy eksperyment, który może zawierać wiele iteracji.
 - **Iteracja** - iteracja to pojedyncza iteracja, która zawiera konkretne informacje dla pojedynczego uruchomienia modelu.
+
+Mamy więc dwie relacje 1 - N między powyższymi:
+- **Projekt** - 1 - N - **Eksperyment** - 1 - N - **Iteracja**
 
 Jako przykład eksperymentu możemy wyróżnić np. `Metody skalowania danych`, w ramach którego możemy mieć wiele iteracji, 
   np. `MinMaxScaler`, `StandardScaler`, `RobustScaler`.
